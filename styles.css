@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2EBE3;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+}
+
+.main-content {
+    display: flex;
+    width: 90%;
+    max-width: 600px;
+    height: 70%;
+    overflow: hidden;
+    margin: 6% auto 5% auto;
+    border-radius: 10px;
+}
+
+.main-content-left {
+    width: 50%;
+    height: 100%;
+    background-image: url('./image-product-desktop.jpg');
+    background-size: cover;
+}
+
+.main-content-right {
+    background-color: #fff;
+    padding: 1.5rem;
+    width: 50%;
+}
+
+.main-content-right h1{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6C7289;
+    font-weight: 500;
+    letter-spacing: 0.2rem;
+}
+
+.main-content-right h2 {
+    font-size: 2rem;
+    color: #1C232B;
+    margin-bottom: 1.2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.main-content-right p {
+    font-size: 14px;
+    color: #6C7289;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.main-content-right .price {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-content-right .price .firstPrice {
+    color: #3C8067;
+    font-size: 2rem;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+
+.main-content-right .price .secondPrice {
+    font-size: 14px;
+    color: #6C7289;
+    text-decoration: line-through;
+}
+
+.main-content-right a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    background-color: #3C8067;
+    display: block;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+.main-content-right a .uil {
+    padding: 0 0.5rem 0 2rem;
+}
+
+.main-content-right a:hover {
+    background-color: #237255;
+}
+
+.attribution {
+    position: absolute;
+    left: 30%;
+    bottom: 5rem;
+}
+
+
+
+
+
+@media(max-width: 600px) {
+    .main-content {
+        height: 75%;
+    }
+}
+
+@media(max-width: 550px) {
+    body {
+        overflow: unset;
+        width: 100vw;
+    }
+    .main-content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        height: 90%;
+        margin-bottom: 2rem;
+    }
+
+    .main-content-left {
+        width: 100%;
+        height: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .main-content-right {
+        width: 100%;
+    }
+    .attribution {
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+    }
+}
+
